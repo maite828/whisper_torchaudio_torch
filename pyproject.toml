@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "whisper-torchaudio-torch"
+version = "0.1.0"
+description = ""
+authors = ["maite828 <echeverry.maite@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.1.2"
+torchaudio = "^2.1.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
