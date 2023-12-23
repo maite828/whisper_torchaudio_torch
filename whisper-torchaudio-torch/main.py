@@ -1,8 +1,9 @@
-import csv
-import os
 import argparse
+import csv
 import json
+import os
 import re
+
 import torch
 import torchaudio
 import whisper_timestamped as whisper
@@ -12,15 +13,14 @@ script_path = os.path.dirname(os.path.realpath(__file__))
 
 def parse_args():
     parser = argparse.ArgumentParser(description="Transcribe and transform audios with whisper, torchaudio, and torch.")
-    parser.add_argument('model_type', help="Model type")
-    parser.add_argument('regex', help="Regex")
-    parser.add_argument('format', help="Audio a_format")
-    parser.add_argument('--language', default='es', help="Language")
-
+    parser.add_argument('model_type', help="Model type: base")
+    parser.add_argument('regex', help="Regex: d{4}")
+    parser.add_argument('format', help="Audio a_format: .wav")
+    parser.add_argument('--language', default='es', help="Language:  es")
     return parser.parse_args()
 
 
-def transcribe_audio(model, audio_file_path, language='es'):
+def transcribe_audio(model, audio_file_path, language):
     try:
         transcription_result = whisper.transcribe_timestamped(
             model,
@@ -50,60 +50,45 @@ def write_to_csv(csv_file_path, row):
         csv_writer.writerow(row)
 
 
-def main(model, regex, a_format, context, lan='es'):
+def main(model, regex, a_format, context, lan):
     try:
         audio_format = a_format
         regex_pattern = re.compile(regex)
-        print(regex_pattern)
+        output_dir = os.path.join(script_path, "../output")
+        os.makedirs(output_dir, exist_ok=True)
 
-        # Create a CSV file to store information
-        csv_file_path = os.path.join(script_path, "output/output_results.csv")
+        csv_file_path = os.path.join(script_path, "../output/output_results.csv")
         header = ["audio_name_original", "original_transcription", "audio_name_result", "result_transcription"]
 
-        # Check if the CSV file already exists
         if not os.path.exists(csv_file_path):
             with open(csv_file_path, 'w', newline='', encoding='utf-8') as csvfile:
                 csv_writer = csv.writer(csvfile)
                 csv_writer.writerow(header)
 
-        for file in os.listdir(script_path):
-            if file.endswith(audio_format):
-                audio_name = file
-                print(audio_name)
-                audio_path = os.path.join(script_path, audio_name)
+        for entry in os.scandir(script_path):
+            if entry.is_file() and entry.name.endswith(audio_format):
+                audio_name = entry.name
+                audio_path = entry.path
 
                 original_transcription = transcribe_audio(model, audio_path, language=lan)
-                print(original_transcription["text"])
-
                 match = regex_pattern.findall(original_transcription["text"])
-
                 data = json.loads(json.dumps(original_transcription, indent=2, ensure_ascii=False))
-
                 for m in match:
                     word = next((t for t in data['segments'][0]['words'] if t['text'] == m), None)
                     if word:
-                        start_time = word['start']  # Adjust to include or exclude more context
-                        end_time = word['end'] + context  # Con base=0.6 y con large=1.1
-
-                        output_dir = os.path.join(script_path, "output")
-                        os.makedirs(output_dir, exist_ok=True)
-
+                        start_time = word['start']
+                        end_time = word['end'] + context
                         audio_excluded, sample_rate = exclude_audio_chunk(audio_path, start_time, end_time)
                         output_file = os.path.join(script_path, f"output/new_{audio_name}")
                         torchaudio.save(output_file, audio_excluded, sample_rate=sample_rate)
-
                         result_transcription = transcribe_audio(model, output_file, language=lan)
-
-                        # Write information to CSV
                         csv_row = [audio_name, original_transcription["text"], os.path.basename(output_file),
                                    result_transcription["text"]]
                         write_to_csv(csv_file_path, csv_row)
-
                         print(f'Original transcription = {original_transcription["text"]}')
                         print(f'Transcription after audio cut = {result_transcription["text"]}')
                     else:
                         print(f"{data['segments'][0]['words']}\nNo matches with that regex pattern: {regex}")
-
         print("Process completed successfully.")
     except Exception as e:
         print(f"Error during audio processing: {e}")
