@@ -4,6 +4,8 @@ version = "0.1.0"
 description = ""
 authors = ["maite828 <echeverry.maite@gmail.com>"]
 readme = "README.md"
+repository = "https://github.com/maite828/whisper-torchaudio-torch.git"
+
 
 [tool.poetry.dependencies]
 python = "^3.9"
