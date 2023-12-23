@@ -2,14 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="Dependencias de requirements.txt">
-      <change afterPath="$PROJECT_DIR$/test/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/main_tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/whisper-torchaudio-torch/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/sample_audio.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/whisper-torchaudio-torch/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/main_tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/main_tests.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whisper-torchaudio-torch/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/whisper-torchaudio-torch/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,16 +44,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/Users/maite828/PycharmProjects/whisper_torchaudio_torch/whisper-torchaudio-torch"
+    "last_opened_file_path": "/Users/maite828/PycharmProjects/whisper_torchaudio_torch/test"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/whisper-torchaudio-torch" />
       <recent name="$PROJECT_DIR$/test" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/whisper-torchaudio-torch" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/whisper-torchaudio-torch" />
     </key>
   </component>
@@ -78,7 +76,7 @@
         <option name="region" />
         <option name="useCurrentConnection" value="false" />
       </EXTENSION>
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/whisper-torchaudio-torch/main.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
       <option name="PARAMETERS" value="base &quot;\b\d{4}\b&quot; .wav --language galician" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -129,6 +127,34 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests for main_tests.test_exclude_audio_chunk" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="whisper_torchaudio_torch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main_tests.test_exclude_audio_chunk&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for main_tests.test_transcribe_audio" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="whisper_torchaudio_torch" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;main_tests.test_transcribe_audio&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests in main_tests.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="whisper_torchaudio_torch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -146,6 +172,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests in main_tests.py" />
+        <item itemvalue="Python tests.Python tests for main_tests.test_exclude_audio_chunk" />
+        <item itemvalue="Python tests.Python tests for main_tests.test_transcribe_audio" />
         <item itemvalue="Python.main_8300" />
         <item itemvalue="Python.main_4632" />
       </list>
@@ -216,7 +244,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703300340877</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Dependencias de requirements.txt">
+      <created>1703344229288</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1703344229288</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

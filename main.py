@@ -54,10 +54,10 @@ def main(model, regex, a_format, context, lan):
     try:
         audio_format = a_format
         regex_pattern = re.compile(regex)
-        output_dir = os.path.join(script_path, "../output")
+        output_dir = os.path.join(script_path, "output")
         os.makedirs(output_dir, exist_ok=True)
 
-        csv_file_path = os.path.join(script_path, "../output/output_results.csv")
+        csv_file_path = os.path.join(script_path, "output/output_results.csv")
         header = ["audio_name_original", "original_transcription", "audio_name_result", "result_transcription"]
 
         if not os.path.exists(csv_file_path):
