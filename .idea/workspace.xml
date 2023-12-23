@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="cambiado el README.md final ahora si">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="cambiado dependencies">
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +40,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "full.screen.before.presentation.mode": "false",
-    "last_opened_file_path": "/Users/maite828/PycharmProjects/whisper_torchaudio_torch/test"
+    "last_opened_file_path": "/Users/maite828/PycharmProjects/whisper_torchaudio_torch/test",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -55,7 +55,7 @@
       <recent name="$PROJECT_DIR$/whisper-torchaudio-torch" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests in main_tests.py">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="whisper_torchaudio_torch" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -276,7 +276,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703348784967</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="cambiado dependencies">
+      <created>1703351843914</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1703351843914</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +307,7 @@
     <MESSAGE value="cambiado el README.md" />
     <MESSAGE value="cambiado el README.md final" />
     <MESSAGE value="cambiado el README.md final ahora si" />
-    <option name="LAST_COMMIT_MESSAGE" value="cambiado el README.md final ahora si" />
+    <MESSAGE value="cambiado dependencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="cambiado dependencies" />
   </component>
 </project>

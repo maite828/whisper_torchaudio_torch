@@ -8,7 +8,7 @@ repository = "https://github.com/maite828/whisper-torchaudio-torch.git"
 
 
 [tool.poetry.dependencies]
-python = "3.9"
+python = "^3.9"
 torch = "2.0.2"
 torchaudio = "2.0.1"
 whisper-timestamped = "^1.14.2"
