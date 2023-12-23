@@ -66,7 +66,6 @@ Para usar el script, siga estos pasos:
 - python main.py <model_type> <regex> <audio_format> --language <language>
 
 ```bash
-cd whisper-torchaudio-torch
 python main.py base "\b\d{4}\b" .wav --language es
 ```
 
@@ -76,7 +75,6 @@ Reemplace `<model_type>` con el tipo de modelo deseado (por ejemplo, `base` o `l
 Por ejemplo, para transcribir todos los audios con una extensión `.wav` usando el modelo Whisper `base`,
  filtrar las transcripciones para la frase "hola" y guardar los resultados en español, ejecutarías el siguiente comando:
 ```bash
-cd whisper-torchaudio-torch
 python main.py large "hola" .wav --language es
 ```
 
@@ -111,7 +109,6 @@ adios.wav
 
 Si ejecuta el script con el siguiente comando:
 ```bash
-cd whisper-torchaudio-torch
 python main.py base "hola" --format .mp3 --language galician
 ```
 ```
