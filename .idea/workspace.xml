@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="modifica el markdown" />
+    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="modifica el markdown y añadir .gitignore">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -9,6 +11,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="pro" />
+      </list>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -103,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703299542544</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="modifica el markdown y añadir .gitignore">
+      <created>1703299853257</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703299853257</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +137,7 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="segundo commit, modifica el markdown" />
     <MESSAGE value="modifica el markdown" />
-    <option name="LAST_COMMIT_MESSAGE" value="modifica el markdown" />
+    <MESSAGE value="modifica el markdown y añadir .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="modifica el markdown y añadir .gitignore" />
   </component>
 </project>
