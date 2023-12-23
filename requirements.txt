@@ -1,5 +1,3 @@
-pip install git+https://github.com/openai/whisper.git
-pip install ffmpeg
-
+ffmpeg=*
 torch~=2.1.2
 torchaudio~=2.1.2
