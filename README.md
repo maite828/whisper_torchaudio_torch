@@ -45,16 +45,17 @@ Para instalar las dependencias necesarias, siga estos pasos:
 1. Abra una terminal o un símbolo del sistema.
 2. Navegue a la carpeta donde se encuentra el script.
 3. Ejecute el siguiente comando:
-- Con Poetry:
-  * poetry shell
-  * poetry update 
-  * poetry build
-#### En caso de no tener instalado poetry, en mac sería:
+4. En caso de no tener instalado poetry, en mac sería:
 - brew install poetry
 
-Este comando instalará las dependencias necesarias en su sistema.
-- Con pip:
+En caso de tener environments conflictivos podemos eliminarlos y empezar de 0:
+- poetry env list
+- poetry env remove whisper-torchaudio-torch-0dGRcXE6-py3.8
+- Con Poetry listo:
+  * poetry shell
   * pip install -r requirements.txt
+  * poetry update 
+  * poetry build
   
 ## Uso
 
