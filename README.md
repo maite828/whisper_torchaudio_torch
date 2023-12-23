@@ -109,7 +109,7 @@ adios.wav
 
 Si ejecuta el script con el siguiente comando:
 ```bash
-python main.py base "hola" --format .mp3 --language galician
+python main.py base "\b\d{4}\b" .mp3 --language galician
 ```
 ```
 El script creará el siguiente archivo CSV:
