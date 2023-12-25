@@ -54,10 +54,10 @@ def main(model, regex, a_format, context, lan):
     try:
         audio_format = a_format
         regex_pattern = re.compile(regex)
-        output_dir = os.path.join(script_path, "output")
+        output_dir = os.path.join(script_path, "../output")
         os.makedirs(output_dir, exist_ok=True)
 
-        csv_file_path = os.path.join(script_path, "output/output_results.csv")
+        csv_file_path = os.path.join(script_path, "../output/output_results.csv")
         header = ["audio_name_original", "original_transcription", "audio_name_result", "result_transcription"]
 
         if not os.path.exists(csv_file_path):
@@ -65,7 +65,7 @@ def main(model, regex, a_format, context, lan):
                 csv_writer = csv.writer(csvfile)
                 csv_writer.writerow(header)
 
-        for entry in os.scandir(script_path):
+        for entry in os.scandir(os.path.join(script_path, "../input")):
             if entry.is_file() and entry.name.endswith(audio_format):
                 audio_name = entry.name
                 audio_path = entry.path
@@ -79,7 +79,7 @@ def main(model, regex, a_format, context, lan):
                         start_time = word['start']
                         end_time = word['end'] + context
                         audio_excluded, sample_rate = exclude_audio_chunk(audio_path, start_time, end_time)
-                        output_file = os.path.join(script_path, f"output/new_{audio_name}")
+                        output_file = os.path.join(script_path, f"../output/new_{audio_name}")
                         torchaudio.save(output_file, audio_excluded, sample_rate=sample_rate)
                         result_transcription = transcribe_audio(model, output_file, language=lan)
                         csv_row = [audio_name, original_transcription["text"], os.path.basename(output_file),

@@ -2,7 +2,7 @@ import unittest
 import pytest
 import os
 
-from main import transcribe_audio, exclude_audio_chunk
+from whisper_torchaudio_torch.main import transcribe_audio, exclude_audio_chunk
 
 
 @pytest.fixture

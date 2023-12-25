@@ -1,3 +1,5 @@
+pytest~=7.4.3
+
 python = "3.9"
 torch = "^2.1.2"
 torchaudio = "^2.1.2"
