@@ -1,4 +1,4 @@
 python=>3.9.16
 torch=>2.1.2
 torchaudio=>2.1.2
-whisper-timestamped=>1.0.0
+whisper-timestamped=1.14.2

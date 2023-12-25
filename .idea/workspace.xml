@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="sin lock">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/whisper_torchaudio_torch-0.1.0.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/whisper_torchaudio_torch-0.1.0.tar.gz" afterDir="false" />
+    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="requirements">
       <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements_dev.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements_dev.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -327,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703513430865</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="requirements">
+      <created>1703522513286</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1703522513286</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -357,6 +361,7 @@
     <MESSAGE value="verison changed" />
     <MESSAGE value="verison changed^again" />
     <MESSAGE value="sin lock" />
-    <option name="LAST_COMMIT_MESSAGE" value="sin lock" />
+    <MESSAGE value="requirements" />
+    <option name="LAST_COMMIT_MESSAGE" value="requirements" />
   </component>
 </project>
