@@ -6,11 +6,13 @@ authors = ["maite828 <echeverry.maite@gmail.com>"]
 readme = "README.md"
 repository = "https://github.com/maite828/whisper-torchaudio-torch.git"
 
-[project]
-dynamic = ["dependencies"]
-[tool.setuptools.dynamic]
-dependencies = {file = ["requirements.txt"]}
-optional-dependencies = {dev = { file = ["requirements-dev.txt"] }}
+
+[tool.poetry.dependencies]
+python = "^3.9"
+torch = "^2.1.2"
+torchaudio = "^2.1.2"
+whisper-timestamped = "1.0.0"
+
 
 [build-system]
 requires = ["poetry-core"]

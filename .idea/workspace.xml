@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="requirements2">
       <change beforePath="$PROJECT_DIR$/output/output_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/output_results.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
