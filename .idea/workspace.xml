@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="verison changed^again">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
-    </list>
+    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="sin lock" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -313,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703353995846</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="sin lock">
+      <created>1703513430865</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1703513430865</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -341,6 +344,7 @@
     <MESSAGE value="cambiado dependencies, denuevo" />
     <MESSAGE value="verison changed" />
     <MESSAGE value="verison changed^again" />
-    <option name="LAST_COMMIT_MESSAGE" value="verison changed^again" />
+    <MESSAGE value="sin lock" />
+    <option name="LAST_COMMIT_MESSAGE" value="sin lock" />
   </component>
 </project>
