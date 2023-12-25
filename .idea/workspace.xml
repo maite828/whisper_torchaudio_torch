@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="requirements2">
-      <change beforePath="$PROJECT_DIR$/output/output_results.csv" beforeDir="false" afterPath="$PROJECT_DIR$/output/output_results.csv" afterDir="false" />
+    <list default="true" id="895f96d6-7885-4101-90b2-8ed16c386d82" name="Changes" comment="toml">
+      <change beforePath="$PROJECT_DIR$/poetry.lock" beforeDir="false" afterPath="$PROJECT_DIR$/poetry.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pyproject.toml" beforeDir="false" afterPath="$PROJECT_DIR$/pyproject.toml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -346,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1703523179301</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="toml">
+      <created>1703524430765</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1703524430766</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -378,6 +385,7 @@
     <MESSAGE value="sin lock" />
     <MESSAGE value="requirements" />
     <MESSAGE value="requirements2" />
-    <option name="LAST_COMMIT_MESSAGE" value="requirements2" />
+    <MESSAGE value="toml" />
+    <option name="LAST_COMMIT_MESSAGE" value="toml" />
   </component>
 </project>

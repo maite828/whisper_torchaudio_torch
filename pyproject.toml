@@ -11,7 +11,7 @@ repository = "https://github.com/maite828/whisper-torchaudio-torch.git"
 python = "^3.9"
 torch = "^2.1.2"
 torchaudio = "^2.1.2"
-whisper-timestamped = "1.0.0"
+whisper-timestamped = "^1.14.0"
 
 
 [build-system]
